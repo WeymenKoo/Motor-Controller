@@ -1,4 +1,4 @@
-# Building a FOC Motor Controller for a Cat-Scale Robot Leg
+# written by claude yeh
 
 Technical notes from a full design cycle: idea → theory → schematic → simulation → layout → fab → bring-up plan. Written as a knowledge refresher as much as a build log, so each section starts with the background needed to follow the decision.
 
