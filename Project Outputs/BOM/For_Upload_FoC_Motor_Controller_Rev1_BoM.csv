@@ -1,0 +1,40 @@
+Designator,Footprint,Quantity,Value,LCSC Part #,Description
+"C4,C5,C40,C43,C44,C47,C48,C50,C51,C52,C59,C80",1210,12,4u7 X7R 100V,C2997285,100V 4.7uF X7R 1210 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C6,C33,C38,C49,C58",0603,5,100n X7R 100V,C15725,100V 100nF X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C7,C10,C15,C17,C20,C24,C31,C41,C79",0603,9,1u X5R 25V,C5673,25V 1uF X5R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C9,C18,C19,C21,C22,C23,C32,C60,C61,C62,C65,C66,C67,C70,C72,C77,C78,C81",0402,18,100n X7R 50V,C77020,50V 100nF X7R 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C11,C12,C13,C14,C16",0805,5,22u X5R 16V,C296720,16V 22uF X5R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C25,C26,C27,C42",0402,4,2n2 X7R 50V,C77022,50V 2.2nF X7R 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C28,C29",0402,2,12pF 50V C0G,C1547,50V 12pF C0G 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C30,C68",0603,2,47n X7R 100V,C469624,100V 47nF X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+"C34,C37,C39",CP_Radial_D10.0mm_P5.00mm,3,100uF 100V,C42371899,100uF 100V Aluminum Electrolytic Capacitors - Radial ROHS (verify ESR/ripple spec before ordering)
+"C73,C74,C75,C76",0603,4,1n X7R 1kV,C696365,1kV 1nF X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+D1,D_SMC_TVS,1,SMCJ51CA,C151288,"SMC Bidirectional TVS Diode, 51V, 1500W, Alternate KiCAD Library"
+"D4,D7",TVS_PESD2CANFD24V-UX,2,PESD2CANFD24V-K,C5278878,ESD Suppressor Diode TVS Bi-Dir 24V 42Vc Automotive 3-Pin SC-70 T/R
+"DZ2,DZ3",D_SOD-323,2,MM3Z3V3ST,C182011,"SOD-323 Zener diode, 3.3V, 300mW, Alternate KiCAD Library"
+"J1,J3,J4,J5",JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical,4,Conn_01x04_MountingPin,C161692,"Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+J6,JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical,1,Conn_01x07_MountingPin,C378970,"Generic connectable mounting pin connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+"J10,J11",JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical,2,Conn_01x02_MountingPin,C161690,"Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+L2,L_Changjiang_FXL0530,1,10uH 125mΩ 3.2A,C177248,10uH 125mΩ 3.2A 0530 Power Inductors ROHS
+"LED1,LED3,LED4",0603,3,LED_0603_Amber,C2287,"Amber SMD LED, 0603, Alternate KiCad Library"
+"Q3,Q4,Q5,Q6,Q7,Q8",IFX-PG-TDSON-8-36-V,6,ISC030N10NM6,C3278643,"Insulated-Gate Field-Effect Transistor (IGFET), N-Channel, Enhancement, Body Diode, Pin 1 Source, 2 Source, 3 Source, 4 Gate, 5 Drain, 6 Drain, 7 Drain, 8 Drain, 8 Pins"
+"R10,R72",0402,2,24.9k 1%,C25874,24.9k ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+"R11,R17,R18,R38,R40",0402,5,10k 1%,C25744,10k ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+"R12,R16,R19",0402,3,100k 1%,C25741,100k ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+"R13,R14,R15",0402,3,56R 1%,C25127,56R ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+"R20,R21,R25,R26,R30,R31,R58",0805,7,0R 1% 1/8W,C17477,0R ±1% 1/8W 0805 Chip Resistor - Surface Mount ROHS
+"R22,R27,R32",2512,3,3mΩ 3W 1%,C5375459,3mΩ ±1% 3W 2512 Chip Resistor - Surface Mount ROHS
+"R36,R39,R42,R44",0402,4,2k 1%,C4109,2k ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+R37,0603,1,10k NTC,C124898,10k NTC Thermistor 0603 NTC Thermistors ROHS
+"R41,R62,R65,R66",0402,4,1k 1%,C11702,1k ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+"R45,R46",0805,2,60R4 1%,C228935,60R4 ±1% 1/8W 0805 Chip Resistor - Surface Mount ROHS
+"R47,R48,R49,R50,R51,R52,R53,R54",0402,8,100R 1%,C25076,100R ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+R73,0402,1,12.4k 1%,C11692,12.4k ±1% 1/16W 0402 Chip Resistor - Surface Mount ROHS
+SW1,Slide_DPDT_SMD_7.2x3.5mm,1,SW_Push_DPDT,C2837066,"Momentary Switch, dual pole double throw"
+U1,TSSOP14_OSM,1,AS5047P-ATSM,C962063,
+U3,DDA0008J,1,LMR36520ADDAR,C2879422,
+U5,LQFP-64_10x10mm_P0.5mm,1,STM32G431RBTx,C431633,"STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 32KB RAM, 170 MHz, 1.71-3.6V, 52 GPIO, LQFP64"
+U6,RTA0040B,1,DRV8323SRTAR,C2150452,
+U7,WDFN-6_2x2mm,1,TLV75733PDRV,C2868428,"1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
+U8,D0008A-IPC_A,1,TCAN1044AVDRQ1,C3234993,
+X1,Crystal_SMD_3225-4Pin_3.2x2.5mm,1,SMD3225-4,C9006,"SMD Quartz crystal, 4 terminals, 3.2mm x 2.5mm, Alternate KiCad Library"

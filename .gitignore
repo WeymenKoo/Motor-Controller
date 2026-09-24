@@ -6,3 +6,15 @@ _autosave-*
 fp-info-cache
 *.lck
 *.DS_Store
+
+# KiCad local history + tool lock folders
+.history/
+.ltspice-mcp/
+
+# Not published: third-party datasheets, KiCad templates, review-pending files, generated backups
+Datasheets/
+Templates/
+_Unused_Review/
+Project Outputs/Fabrication/backups/
+Documentation/*.gslides
+Documentation/*.xlsm
