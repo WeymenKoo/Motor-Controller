@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "9d1d4b2a-9089-441d-823f-58e35212ada5")
 	(paper "A3")
+	(title_block
+		(title "Interface - Interconnects")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
@@ -3234,33 +3240,10 @@
 		)
 		(uuid "f353b08d-4001-4df5-bfb1-62adccc7a25e")
 	)
-	(text_box "DESIGN NOTE:\nLoop closed = PC3 low = run;\n  \nLoop open OR cable unplugged = PC3 high = hardware break."
-		(exclude_from_sim no)
-		(at 57.15 123.7632 0)
-		(size 34.29 14.6668)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "2f0f75a1-83c8-46fa-9c3b-2f9d0eb5d74a")
-	)
-	(text_box "DESIGN NOTE:\nJ6 shares SPI1 (SCK/MISO/MOSI) with the on-board AS5047P (U1).\nIsolation is by chip select only: U1 on PA4, remote on PC4.\nAS5047P tri-states MISO when CSn is high (datasheet t_OZ), so two\nslaves on one bus is valid - but firmware MUST NOT assert both\nchip selects."
+	(text_box "DESIGN NOTE:\nSHARED SPI1\nJ6 (AUX2) shares SCK/MISO/MOSI with\non-board U1 (AS5047P). Selected by CS\nonly: U1 on PA4, remote on PC4.\nAS5047P tri-states MISO when CSn is\nhigh; only one CS active at a time."
 		(exclude_from_sim no)
 		(at 306.07 160.7462 0)
-		(size 46.99 22.35)
+		(size 46.99 17.78)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)
@@ -3328,29 +3311,6 @@
 		)
 		(uuid "b5dd5be0-8c61-4c7c-915b-76582a9d5649")
 	)
-	(text_box "DESIGN NOTE:\n\nNo ESD protection for prototype.\nExpected to be in lab environment."
-		(exclude_from_sim no)
-		(at 25.4 38.1 0)
-		(size 44.45 14.1714)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c08b6dc8-e4d1-4ae0-b971-a5eb426e308b")
-	)
 	(text_box "Temperature"
 		(exclude_from_sim no)
 		(at 139.7 167.005 0)
@@ -3375,10 +3335,10 @@
 		)
 		(uuid "cd7fe132-1b27-4ea4-b8da-84424e8ac361")
 	)
-	(text_box "DESIGN NOTE:\nUART PIN NAMING\nNet UART1_TX lands on PB7 = USART1_RX.\nNet UART1_RX lands on PB6 = USART1_TX."
+	(text_box "DESIGN NOTE:\nUART NET NAMING\nUART1_TX -> PB7 (USART1_RX)\nUART1_RX -> PB6 (USART1_TX)"
 		(exclude_from_sim no)
 		(at 293.37 60.2632 0)
-		(size 34.29 14.1714)
+		(size 34.29 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)
@@ -3400,8 +3360,8 @@
 	)
 	(text_box "[${#}] Interface - Interconnects"
 		(exclude_from_sim no)
-		(at 134.62 11.43 0)
-		(size 273.05 24.4424)
+		(at 12.7 12.7 0)
+		(size 394.97 24.4424)
 		(margins 5.9999 5.9999 5.9999 5.9999)
 		(stroke
 			(width -0.0001)
@@ -11392,4 +11352,110 @@
 			)
 		)
 	)
-)
+
+	(text_box "DESIGN NOTE:\nESD PROTECTION\nCAN bus: D4/D7 PESD2CANFD24V on CANH/CANL.\nSWD, UART, I2C, AUX2, NTC and E-stop connectors\nunprotected (prototype, lab use)."
+		(exclude_from_sim no)
+		(at 25.4 54.61 0)
+		(size 55.88 12.70)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "9bec60b5-30fd-4378-9923-912739c995ac")
+	)
+	(rectangle
+		(start 22.86 85.09)
+		(end 133.35 177.8)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6d857f3c-3405-4fc0-b381-2387c8b2fb2e")
+	)
+	(text_box "E-Stop"
+		(exclude_from_sim no)
+		(at 22.86 168.7697 0)
+		(size 110.49 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "32571bb9-ca4c-41cc-aa20-dfc1086e835a")
+	)
+	(text_box "REV 1 NOTE:\nE-STOP NOT FUNCTIONAL AS DRAWN\nJ11-1 connects directly to DRV_ENABLE; R41/C42 feed\nthe same node into PC3 (ESTOP).\n- Unplugged: R16 100k holds DRV_ENABLE low\n  (driver off = fail-safe).\n- J11 looped to GND: shorts the MCU DRV_ENABLE\n  output; driver cannot be enabled.\n- PC3 only mirrors DRV_ENABLE.\nLeave J11 unplugged; bench supply switch is the\nE-stop. Rev 2: separate E-stop input."
+		(exclude_from_sim no)
+		(at 25.4 88.9 0)
+		(size 57.15 25.40)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "079bf6af-365e-4b1a-84e9-01c2f872ea59")
+	)
+	(text_box "DESIGN NOTE:\nCALC - SPLIT TERMINATION (SW1 selects)\nDifferential: R45 + R46 = 120.8 R (spec 120 R +/-10%)\nCommon-mode:  fc = 1/(2*pi*(R45||R46)*C68)\n                 = 1/(2*pi*30.2*47n) = 112 kHz\nEnable (SW1 ON) only at the two bus-end nodes.\nJ4/J5 daisy-chain the bus; J2 (DNP) is an alternate.\nNo common-mode choke: sub-metre harness,\nno certification requirement."
+		(exclude_from_sim no)
+		(at 96.52 186.69 0)
+		(size 64.77 21.59)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "d3fe95a8-879d-43d3-a03c-3990d042af90")
+	))

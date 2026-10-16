@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "e449692f-d906-4e3e-8bb9-0407b62bab5b")
 	(paper "A3")
+	(title_block
+		(title "Power - Generation")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -1750,10 +1756,10 @@
 		)
 		(uuid "039a0645-d73f-4d12-b360-a23302b52b39")
 	)
-	(text_box "SPEC:\nTLV75733PDRV   TI   \nWSON-6 2x2 (DRV)\nVin 2.5-5.5 V \n1 A \nVdo ~240 mV @ 1 A \nfixed 3.3 V\nEN gated on PG_5V -> 3V3 cannot precede 5V."
+	(text_box "SPEC:\nTLV75733PDRV   TI\nWSON-6 2x2 (DRV)\nVin 2.5-5.5 V\n1 A\nVdo ~240 mV @ 1 A\nfixed 3.3 V\nEN gated on PG_5V:\n3V3 cannot precede 5V."
 		(exclude_from_sim no)
 		(at 146.05 210.8347 0)
-		(size 27.94 21.5753)
+		(size 27.94 21.59)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)
@@ -1773,33 +1779,10 @@
 		)
 		(uuid "3f71d9f0-574e-42ed-aa7a-665c4e7abb2d")
 	)
-	(text_box "DESIGN NOTE:\nEN gated on PG_5V -> 3V3 cannot precede 5V."
-		(exclude_from_sim no)
-		(at 78.74 209.55 0)
-		(size 22.86 11.43)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "70085408-e08a-425a-aefe-a1c93cfbefe8")
-	)
-	(text_box "DESIGN NOTE:\n5V BUCK\nVout = 1.0 x (1 + R12/R10) \n     = 1.0 x (1 + 100k/24.9k) = 5.016 V\ndIL  = Vout(Vin-Vout)/(Vin x L x fsw)\n     = 5(50.4-5)/(50.4 x 10u x 400k) = 1.13 A pk-pk\nIpk  = Iout + 0.56 A. L2 sat 3.2 A -> OK to 2.6 A load.\nCin(eff): 2 x 4u7 X7R 1210 at 50 V DC bias ~= 40% -> ~3.8 uF\nCout(eff): 4 x 22u X5R 0805 at 5 V DC bias ~= 70% -> ~62 uF"
+	(text_box "DESIGN NOTE:\n5V BUCK\nVout = 1.0 x (1 + R12/R10)\n     = 1.0 x (1 + 100k/24.9k) = 5.016 V\ndIL  = Vout(Vin-Vout)/(Vin x L x fsw)\n     = 5(50.4-5)/(50.4 x 10u x 400k)\n     = 1.13 A pk-pk\nIpk  = Iout + 0.56 A; L2 sat 3.2 A\n     -> OK to 2.6 A load.\nCin(eff):  2 x 4u7 X7R 1210 @ 50 V bias\n           ~40% -> ~3.8 uF\nCout(eff): 4 x 22u X5R 0805 @ 5 V bias\n           ~70% -> ~62 uF"
 		(exclude_from_sim no)
 		(at 313.69 86.1587 0)
-		(size 60.96 25.6013)
+		(size 60.96 29.21)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)
@@ -1818,29 +1801,6 @@
 			(justify left top)
 		)
 		(uuid "7ba19019-21e6-4180-bc16-5e5f29d91fa0")
-	)
-	(text_box "DESIGN NOTE:\n3V3 BUDGET AND LDO THERMAL\nPd = (5.02 - 3.30) x I = 1.72 x 500mA = 0.86 W\nTheta-JA (WSON-6, 2 oz, thermal pad vias) ~= 78 C/W\ndT = 67 C. Tj at 25 C ambient = 92 C. Limit 125 C.\n\nRequire external heatsink if operating in warm ambient"
-		(exclude_from_sim no)
-		(at 146.05 181.6101 0)
-		(size 45.72 25.3999)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "882663b5-c8ae-474f-973e-90c01a26fa32")
 	)
 	(text_box "5V Buck Converter"
 		(exclude_from_sim no)
@@ -6815,4 +6775,27 @@
 			)
 		)
 	)
-)
+
+	(text_box "DESIGN NOTE:\n3V3 BUDGET AND LDO THERMAL\nPd = (5.02 - 3.30) x 500 mA = 0.86 W\nTheta-JA (WSON-6, 2 oz, pad vias) ~= 78 C/W\ndT = 67 C -> Tj = 92 C at 25 C ambient\n(limit 125 C). 500 mA is the budget ceiling;\nkeep the real 3V3 load well below it in a\nwarm ambient."
+		(exclude_from_sim no)
+		(at 146.05 181.6101 0)
+		(size 53.34 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "44f514b6-7dc3-44f4-87a3-071ba777461e")
+	))

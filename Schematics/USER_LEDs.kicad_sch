@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "45f430f8-68db-4239-96b4-b68e4111f024")
 	(paper "A4")
+	(title_block
+		(title "USER - LEDs")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers
@@ -1958,4 +1964,41 @@
 			)
 		)
 	)
-)
+
+	(rectangle
+		(start 76.2 58.42)
+		(end 215.9 137.16)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0a00863c-49a5-404f-b00a-1f9e110f4d40")
+	)
+	(text_box "Status LEDs"
+		(exclude_from_sim no)
+		(at 76.2 128.1297 0)
+		(size 139.7 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "31fc6341-9188-40c4-8e1a-973d821b2ff4")
+	))

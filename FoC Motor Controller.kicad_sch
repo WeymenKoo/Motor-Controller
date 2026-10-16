@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Cover Page")
-		(date "Last Modified Date")
+		(date "${RELEASE_DATE}")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
@@ -123,7 +123,7 @@
 		)
 		(uuid "2d20025d-61e4-451d-b51e-153fedc44d68")
 	)
-	(text "Sensing - Battery"
+	(text "Sensing - Temperature"
 		(exclude_from_sim no)
 		(at 45.72 152.4 0)
 		(effects
@@ -234,7 +234,7 @@
 		)
 		(uuid "44841f0e-187c-41b9-a570-9f74973319c9")
 	)
-	(text "Interface - Interconnects"
+	(text "Mechanical - Mounting"
 		(exclude_from_sim no)
 		(at 144.78 99.06 0)
 		(effects
@@ -332,7 +332,7 @@
 		)
 		(uuid "5216de6a-28ab-4e49-a422-9fd32d8fed67")
 	)
-	(text "Power - Generation\n"
+	(text "Power - Generation"
 		(exclude_from_sim no)
 		(at 45.72 106.68 0)
 		(effects
@@ -472,7 +472,7 @@
 		)
 		(uuid "718e4830-a352-43f0-b9c5-1495032b5970")
 	)
-	(text "${CURRENT_DATE}"
+	(text "${RELEASE_DATE}"
 		(exclude_from_sim no)
 		(at 388.62 40.64 0)
 		(effects
@@ -571,7 +571,7 @@
 		)
 		(uuid "7fd97343-03c5-4f22-a59e-bc2d9fd9af23")
 	)
-	(text "Variant: ${VARIANT}"
+	(text "Variant: Prototype"
 		(exclude_from_sim no)
 		(at 25.4 58.42 0)
 		(effects
@@ -741,7 +741,7 @@
 		)
 		(uuid "9d747571-2a3a-41dd-b7ab-0c07afaa5df1")
 	)
-	(text "Sensing - Temperature"
+	(text "Interface - CAN FD"
 		(exclude_from_sim no)
 		(at 144.78 83.82 0)
 		(effects
@@ -825,7 +825,7 @@
 		)
 		(uuid "ada746a9-1ac8-4ba5-b1f0-e040d6c0fa14")
 	)
-	(text "USER - LEDs"
+	(text "..........................................."
 		(exclude_from_sim no)
 		(at 144.78 114.3 0)
 		(effects
@@ -938,7 +938,7 @@
 		)
 		(uuid "beb5ee3d-ad62-4c0c-ab18-390f8e3c78c4")
 	)
-	(text "Mechanical - Mounting"
+	(text "USER - LEDs"
 		(exclude_from_sim no)
 		(at 144.78 106.68 0)
 		(effects
@@ -1245,7 +1245,7 @@
 		)
 		(uuid "ecd14d51-7267-460d-9460-6bae137b0c37")
 	)
-	(text "Interface - CAN FD"
+	(text "Interface - Interconnects"
 		(exclude_from_sim no)
 		(at 144.78 91.44 0)
 		(effects
@@ -1370,29 +1370,6 @@
 			(href "#17")
 		)
 		(uuid "ffcd9e5c-5c93-423a-9ccc-e0af67821852")
-	)
-	(text_box "Metadata can be set in File → Schematic Setup → Project → Text Variables"
-		(exclude_from_sim no)
-		(at 27.94 306.07 0)
-		(size 119.38 6.35)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.381)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify right top)
-		)
-		(uuid "4d4fc8f9-28d9-4b33-b78d-b00f0a2b33ca")
 	)
 	(polyline
 		(pts

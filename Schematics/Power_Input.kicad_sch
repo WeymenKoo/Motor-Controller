@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "d98bfea6-cd05-4bfa-8376-20b261deea79")
 	(paper "A4")
+	(title_block
+		(title "Power - Input")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
@@ -826,10 +832,10 @@
 		)
 		(uuid "6d3bd0cf-60a5-4585-956d-d0d817669b30")
 	)
-	(text_box "ACCEPTED RISK:\nD1 clamps at 82.4 V. Downstream absolute maximums:\nDRV8323 VM/VDRAIN   65 V\nLMR36520 VIN        65 V\nTLV75733 VIN       5.5 V (fed from +5V, not exposed)\nD1 therefore does NOT protect the board against an event large\nenough to engage it.\n\nSOLUTION:\nUpstream PDB handles protection"
+	(text_box "ACCEPTED RISK:\nD1 clamps at 82.4 V, above\ndownstream abs max:\n  DRV8323 VM/VDRAIN  65 V\n  LMR36520 VIN       65 V\nD1 cannot protect the board\nfrom an event large enough\nto engage it.\nMitigation: overvoltage\nprotection in upstream PDB."
 		(exclude_from_sim no)
 		(at 85.09 67.31 0)
-		(size 35.56 29.21)
+		(size 35.56 22.86)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)
@@ -849,10 +855,10 @@
 		)
 		(uuid "03cd3888-cac8-408f-853d-5a770286492c")
 	)
-	(text_box "ASSEMBLY:\nD3.2mm solder pad, no connector"
+	(text_box "ASSEMBLY:\n3.2 mm dia\nsolder pad,\nno connector"
 		(exclude_from_sim no)
 		(at 125.73 67.31 0)
-		(size 16.51 10.16)
+		(size 16.51 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)

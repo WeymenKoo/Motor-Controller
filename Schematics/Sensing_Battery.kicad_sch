@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "f425b28c-d122-46f5-97f6-060896132b08")
 	(paper "A4")
+	(title_block
+		(title "Sensing - Battery")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -476,10 +482,10 @@
 		)
 		(uuid "6e4a5183-a13c-406b-9ef2-2a7884749718")
 	)
-	(text_box "DESIGN NOTE:\n  Ratio = R36/(R72+R73+R36) = 2/(24.9+12.4+2) = 2/39.3 = 0.05089\n    at 50.4 V -> 2.565 V\n    at 56.0 V -> 2.850 V\n    clips at VREF+ = 3.3 V when Vbus = 64.8 V\n  Divider current at 50.4 V = 1.283 mA (continuous pack drain)\n  P(R72) = 41 mW, P(R73) = 20 mW\n  Rth = (R72+R73) || R36 = 1.90 k\n  tau = 190 us, fc = 838 Hz"
+	(text_box "DESIGN NOTE:\n  Ratio = R36/(R72+R73+R36)\n        = 2/(24.9+12.4+2) = 0.05089\n    at 50.4 V -> 2.565 V\n    at 56.0 V -> 2.850 V\n    clips at VREF+ = 3.3 V when Vbus = 64.8 V\n  Divider current at 50.4 V = 1.283 mA\n    (continuous pack drain)\n  P(R72) = 41 mW, P(R73) = 20 mW\n  Rth = (R72+R73) || R36 = 1.90 k\n  tau = 190 us, fc = 838 Hz"
 		(exclude_from_sim no)
 		(at 78.74 87.63 0)
-		(size 67.31 24.13)
+		(size 67.31 25.40)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)

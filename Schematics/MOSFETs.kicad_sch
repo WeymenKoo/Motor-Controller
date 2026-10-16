@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "80e26497-a3b5-4eaa-acb7-14663a84c1e7")
 	(paper "A3")
+	(title_block
+		(title "MOSFETs")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1512,190 +1518,6 @@
 		)
 		(uuid "0470ac88-0ae6-4395-af55-cdbba40a2202")
 	)
-	(text_box "SPEC:\nQ3-Q8  ISC030N10NM6  Infineon  TOLL (PG-HSOF-8)\n100 V \n3.0 mR typ @ 10 V \nQg [FILL] nC \nQgd [FILL] nC"
-		(exclude_from_sim no)
-		(at 308.61 212.09 0)
-		(size 31.75 19.05)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 194 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "0cdb1303-24e0-433b-a977-d9288a93cbb2")
-	)
-	(text_box "DESIGN NOTE:\nCALC - DC LINK\n  Bulk        3 x 100 uF = 300 uF (polymer, negligible DC derating)\n  MLCC        9 x 4u7 = 42.3 uF nominal\n              at 50 V DC bias, 1210 X7R ~= 0.4 -> 16.9 uF effective\n  Bus ripple  dV ~= Idc/(fsw x C) = [FILL]/( [FILL] x 316u) = [FILL] V\n  Ripple current requirement: [FILL] A RMS vs 3 x [FILL] A rated"
-		(exclude_from_sim no)
-		(at 97.79 53.34 0)
-		(size 74.93 19.05)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "2c627051-743a-4f0e-bacd-ffd0a1601ccd")
-	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 337.82 222.25 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "53f8249d-e541-456e-b259-41b737e89668")
-	)
-	(text_box "DESIGN NOTE:\nCALC - CONDUCTION LOSS\n  Rds(on) at Tj 125 C ~= 3.0 mR x 1.5 = 4.5 mR\n  P_cond = 3 x Iph_rms^2 x Rds(on) = 3 x [FILL]^2 x 4.5 mR = [FILL] W\n  Shunt   P = Iph_rms^2 x 3 mR = [FILL] W each (3 W rated)\n  Vsense at 20 A = 60 mV"
-		(exclude_from_sim no)
-		(at 135.89 220.98 0)
-		(size 68.58 16.51)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "62ecc402-e548-44aa-8936-022be6318f9e")
-	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 199.39 228.6 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "6a66908f-caa0-47ec-8e8b-afa8441c05ab")
-	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 171.45 60.96 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "7332d338-853d-4b90-9ff7-9b6fa5040f43")
-	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 82.55 241.3 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "a7fac737-d3d6-48a6-9751-404e7b1e437d")
-	)
-	(text_box "DESIGN NOTE:\nCALC - CURRENT SENSE\n  Rshunt = 3 mR, bidirectional, VREF = 3.3 V, zero at 1.65 V\n    Gain 5  -> +/-110 A     Gain 20 -> +/-27.5 A\n    Gain 10 -> +/-55 A      Gain 40 -> +/-13.75 A\n  SELECTED: gain 20 V/V\n  ADC resolution at gain 20:\n    (3.3/4096) / 20 / 3 mR = 13.4 mA per LSB\n  Vsense at 20 A = 60 mV (within +/-1 V continuous spec)"
-		(exclude_from_sim no)
-		(at 62.23 220.98 0)
-		(size 66.04 22.86)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c0965feb-4fcf-45cc-8d54-7e2297326168")
-	)
 	(junction
 		(at 321.31 182.88)
 		(diameter 0)
@@ -1715,10 +1537,16 @@
 		(uuid "0c1c98a4-5b8b-4258-9313-2957cf4c676b")
 	)
 	(junction
-		(at 246.38 76.2)
+		(at 175.26 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c67725f-ab67-43b3-b351-0f73f3a0269b")
+	)
+	(junction
+		(at 90.17 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1046ac3b-03ac-4a43-bb8e-16bab34fad4a")
 	)
 	(junction
 		(at 110.49 111.76)
@@ -1757,7 +1585,7 @@
 		(uuid "26ee6183-9bf6-4974-aa31-7dec83dd821c")
 	)
 	(junction
-		(at 231.14 76.2)
+		(at 160.02 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29db7da1-3327-44bf-9e46-053f8297e488")
@@ -1769,7 +1597,13 @@
 		(uuid "2eeabc5e-59cd-43a1-be35-219f276bbb31")
 	)
 	(junction
-		(at 231.14 88.9)
+		(at 90.17 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "316f9b83-5c5b-42f8-8db8-9a81cbe2d744")
+	)
+	(junction
+		(at 160.02 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3183a450-0bed-40fe-bcb2-95835dac5d75")
@@ -1781,7 +1615,7 @@
 		(uuid "35411dac-5436-44bb-883c-6fbeb443bda2")
 	)
 	(junction
-		(at 181.61 76.2)
+		(at 110.49 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3660ced8-c5b1-4cab-90a3-15a9cc01804e")
@@ -1841,12 +1675,6 @@
 		(uuid "63eb22f0-e44d-42be-a7ba-8f6f5ad1f90c")
 	)
 	(junction
-		(at 135.89 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64e13791-cf81-45b8-a860-2b1cad4cf4db")
-	)
-	(junction
 		(at 321.31 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1871,7 +1699,7 @@
 		(uuid "7fbf4728-6a98-40eb-ab5c-ce5d6a1a85e0")
 	)
 	(junction
-		(at 97.79 76.2)
+		(at 52.07 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e99bcec-ef83-4ba4-8906-cfd2be4e1bcf")
@@ -1883,7 +1711,7 @@
 		(uuid "91819630-7a68-4478-85f4-4579e46ecf85")
 	)
 	(junction
-		(at 246.38 88.9)
+		(at 175.26 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "919e7d8c-d488-471f-989b-4594992a4b5c")
@@ -1895,7 +1723,7 @@
 		(uuid "91c8ae15-f95c-4d13-b09b-54154f9a3a3f")
 	)
 	(junction
-		(at 181.61 88.9)
+		(at 110.49 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96b377bf-5fa6-4f7b-825c-f8ea15a77702")
@@ -1907,16 +1735,10 @@
 		(uuid "9bd888ca-28ed-4483-8f91-b0bbcf9a9491")
 	)
 	(junction
-		(at 116.84 76.2)
+		(at 71.12 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dee65ec-f40f-4d85-aa07-4fbc2037cffa")
-	)
-	(junction
-		(at 135.89 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9fa5fe28-f441-4155-9fc8-03a1dbad9455")
 	)
 	(junction
 		(at 91.44 199.39)
@@ -1925,13 +1747,13 @@
 		(uuid "a2e2a69d-f797-4c81-a663-0c581c76d5d4")
 	)
 	(junction
-		(at 198.12 88.9)
+		(at 127 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4afacd1-e077-459f-923c-8cabc4e8d23b")
 	)
 	(junction
-		(at 116.84 88.9)
+		(at 71.12 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cfc40e5a-e6cf-4bef-a602-1e458df8c2d9")
@@ -1961,7 +1783,7 @@
 		(uuid "d6222986-910f-4445-8bb6-7b40fd8e1334")
 	)
 	(junction
-		(at 198.12 76.2)
+		(at 127 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d98c0ea2-4bb1-4291-82bb-4cf95a662d3d")
@@ -1991,7 +1813,7 @@
 		(uuid "ec523225-1d6b-4cdb-9b2b-431c66100b1d")
 	)
 	(junction
-		(at 214.63 88.9)
+		(at 143.51 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ecaa4cd5-507b-49fc-91db-807012c77568")
@@ -2003,13 +1825,13 @@
 		(uuid "ed96f387-7f52-49c5-b6d3-51d4e25aace0")
 	)
 	(junction
-		(at 214.63 76.2)
+		(at 143.51 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2769d27-addb-44bc-8183-3160cc3e35d4")
 	)
 	(junction
-		(at 97.79 88.9)
+		(at 52.07 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa353238-c350-419d-85fc-c91de5e5bc13")
@@ -2074,7 +1896,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 76.2) (xy 198.12 78.74)
+			(xy 127 55.88) (xy 127 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2084,7 +1906,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 86.36) (xy 214.63 88.9)
+			(xy 143.51 66.04) (xy 143.51 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2094,7 +1916,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 76.2) (xy 261.62 78.74)
+			(xy 190.5 55.88) (xy 190.5 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2144,7 +1966,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 88.9) (xy 231.14 88.9)
+			(xy 143.51 68.58) (xy 160.02 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2334,7 +2156,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 88.9) (xy 261.62 88.9)
+			(xy 175.26 68.58) (xy 190.5 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2374,7 +2196,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 88.9) (xy 214.63 88.9)
+			(xy 127 68.58) (xy 143.51 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2384,7 +2206,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 76.2) (xy 97.79 78.74)
+			(xy 52.07 55.88) (xy 52.07 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2584,7 +2406,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 86.36) (xy 246.38 88.9)
+			(xy 175.26 66.04) (xy 175.26 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2604,7 +2426,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 76.2) (xy 135.89 78.74)
+			(xy 90.17 55.88) (xy 90.17 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2654,7 +2476,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 76.2) (xy 246.38 76.2)
+			(xy 160.02 55.88) (xy 175.26 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2664,7 +2486,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 76.2) (xy 97.79 76.2)
+			(xy 44.45 55.88) (xy 52.07 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2674,7 +2496,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 86.36) (xy 198.12 88.9)
+			(xy 127 66.04) (xy 127 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2694,7 +2516,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 88.9) (xy 198.12 88.9)
+			(xy 110.49 68.58) (xy 127 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2724,7 +2546,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 76.2) (xy 181.61 76.2)
+			(xy 90.17 55.88) (xy 110.49 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2754,7 +2576,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 88.9) (xy 135.89 88.9)
+			(xy 71.12 68.58) (xy 90.17 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2764,7 +2586,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 88.9) (xy 246.38 88.9)
+			(xy 160.02 68.58) (xy 175.26 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2774,7 +2596,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 76.2) (xy 231.14 78.74)
+			(xy 160.02 55.88) (xy 160.02 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2824,7 +2646,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 76.2) (xy 231.14 76.2)
+			(xy 143.51 55.88) (xy 160.02 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2854,7 +2676,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 86.36) (xy 97.79 88.9)
+			(xy 52.07 66.04) (xy 52.07 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2964,7 +2786,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 86.36) (xy 135.89 88.9)
+			(xy 90.17 66.04) (xy 90.17 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2994,7 +2816,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 76.2) (xy 214.63 76.2)
+			(xy 127 55.88) (xy 143.51 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3044,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 86.36) (xy 231.14 88.9)
+			(xy 160.02 66.04) (xy 160.02 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3084,7 +2906,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 86.36) (xy 261.62 88.9)
+			(xy 190.5 66.04) (xy 190.5 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3134,7 +2956,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 76.2) (xy 116.84 76.2)
+			(xy 52.07 55.88) (xy 71.12 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3144,7 +2966,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 88.9) (xy 116.84 88.9)
+			(xy 52.07 68.58) (xy 71.12 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3184,7 +3006,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 86.36) (xy 116.84 88.9)
+			(xy 71.12 66.04) (xy 71.12 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3234,7 +3056,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 76.2) (xy 246.38 78.74)
+			(xy 175.26 55.88) (xy 175.26 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3274,7 +3096,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 76.2) (xy 116.84 78.74)
+			(xy 71.12 55.88) (xy 71.12 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3284,7 +3106,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 86.36) (xy 181.61 88.9)
+			(xy 110.49 66.04) (xy 110.49 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3314,7 +3136,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 76.2) (xy 135.89 76.2)
+			(xy 71.12 55.88) (xy 90.17 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3464,7 +3286,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 88.9) (xy 181.61 88.9)
+			(xy 90.17 68.58) (xy 110.49 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3474,7 +3296,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 76.2) (xy 198.12 76.2)
+			(xy 110.49 55.88) (xy 127 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3584,7 +3406,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 76.2) (xy 181.61 78.74)
+			(xy 110.49 55.88) (xy 110.49 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3634,7 +3456,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 88.9) (xy 97.79 88.9)
+			(xy 44.45 68.58) (xy 52.07 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3684,7 +3506,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 76.2) (xy 261.62 76.2)
+			(xy 175.26 55.88) (xy 190.5 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3694,7 +3516,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 76.2) (xy 214.63 78.74)
+			(xy 143.51 55.88) (xy 143.51 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4809,7 +4631,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 214.63 82.55 0)
+		(at 143.51 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4819,7 +4641,7 @@
 		(dnp no)
 		(uuid "1d83191a-9509-4e3f-b93b-5b5d3bd3bc19")
 		(property "Reference" "C47"
-			(at 215.138 80.01 0)
+			(at 144.018 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4830,7 +4652,7 @@
 			)
 		)
 		(property "Value" "4u7 X7R 100V"
-			(at 215.138 85.09 0)
+			(at 144.018 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4841,7 +4663,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 215.5952 86.36 0)
+			(at 144.4752 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4852,7 +4674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 82.55 0)
+			(at 143.51 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4863,7 +4685,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 218.44 86.106 0)
+			(at 147.32 65.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4875,7 +4697,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 214.63 82.55 0)
+			(at 143.51 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4886,7 +4708,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 214.63 82.55 0)
+			(at 143.51 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4897,7 +4719,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 214.63 82.55 0)
+			(at 143.51 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4908,7 +4730,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 214.63 82.55 0)
+			(at 143.51 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6002,7 +5824,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 246.38 82.55 0)
+		(at 175.26 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6012,7 +5834,7 @@
 		(dnp no)
 		(uuid "48b1e8bd-2a89-4f60-8c2c-1f332a33b4d5")
 		(property "Reference" "C50"
-			(at 246.888 80.01 0)
+			(at 175.768 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6023,7 +5845,7 @@
 			)
 		)
 		(property "Value" "4u7 X7R 100V"
-			(at 246.888 85.09 0)
+			(at 175.768 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6034,7 +5856,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 247.3452 86.36 0)
+			(at 176.2252 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6045,7 +5867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 82.55 0)
+			(at 175.26 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6056,7 +5878,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 250.19 86.106 0)
+			(at 179.07 65.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6068,7 +5890,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 246.38 82.55 0)
+			(at 175.26 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6079,7 +5901,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 246.38 82.55 0)
+			(at 175.26 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6090,7 +5912,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 246.38 82.55 0)
+			(at 175.26 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6101,7 +5923,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 246.38 82.55 0)
+			(at 175.26 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7323,7 +7145,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 181.61 82.55 0)
+		(at 110.49 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7333,7 +7155,7 @@
 		(dnp no)
 		(uuid "73f9c450-dd8b-47a9-8ba3-b362849ff603")
 		(property "Reference" "C43"
-			(at 182.118 80.01 0)
+			(at 110.998 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7344,7 +7166,7 @@
 			)
 		)
 		(property "Value" "4u7 X7R 100V"
-			(at 182.118 85.09 0)
+			(at 110.998 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7355,7 +7177,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 182.5752 86.36 0)
+			(at 111.4552 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7366,7 +7188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 82.55 0)
+			(at 110.49 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7377,7 +7199,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 185.42 86.106 0)
+			(at 114.3 65.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7389,7 +7211,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 181.61 82.55 0)
+			(at 110.49 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7400,7 +7222,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 181.61 82.55 0)
+			(at 110.49 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7411,7 +7233,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 181.61 82.55 0)
+			(at 110.49 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7422,7 +7244,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 181.61 82.55 0)
+			(at 110.49 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7575,7 +7397,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 198.12 82.55 0)
+		(at 127 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7585,7 +7407,7 @@
 		(dnp no)
 		(uuid "81345400-bb67-428c-b36f-2d460be4f3c0")
 		(property "Reference" "C44"
-			(at 198.628 80.01 0)
+			(at 127.508 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7596,7 +7418,7 @@
 			)
 		)
 		(property "Value" "4u7 X7R 100V"
-			(at 198.628 85.09 0)
+			(at 127.508 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7607,7 +7429,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 199.0852 86.36 0)
+			(at 127.9652 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7618,7 +7440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 82.55 0)
+			(at 127 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7629,7 +7451,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 201.93 86.106 0)
+			(at 130.81 65.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7641,7 +7463,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 198.12 82.55 0)
+			(at 127 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7652,7 +7474,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 198.12 82.55 0)
+			(at 127 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7663,7 +7485,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 198.12 82.55 0)
+			(at 127 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7674,7 +7496,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 198.12 82.55 0)
+			(at 127 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8017,7 +7839,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 261.62 82.55 0)
+		(at 190.5 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8027,7 +7849,7 @@
 		(dnp no)
 		(uuid "8e036e0f-91c6-4d32-884d-bcd77482fc37")
 		(property "Reference" "C52"
-			(at 262.128 80.01 0)
+			(at 191.008 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8038,7 +7860,7 @@
 			)
 		)
 		(property "Value" "4u7 X7R 100V"
-			(at 262.128 85.09 0)
+			(at 191.008 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8049,7 +7871,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 262.5852 86.36 0)
+			(at 191.4652 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8060,7 +7882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 82.55 0)
+			(at 190.5 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8071,7 +7893,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 265.43 86.106 0)
+			(at 194.31 65.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8083,7 +7905,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 261.62 82.55 0)
+			(at 190.5 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8094,7 +7916,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 261.62 82.55 0)
+			(at 190.5 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8105,7 +7927,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 261.62 82.55 0)
+			(at 190.5 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8116,7 +7938,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 261.62 82.55 0)
+			(at 190.5 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8595,7 +8417,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:C_Polarized")
-		(at 97.79 82.55 0)
+		(at 52.07 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8605,7 +8427,7 @@
 		(dnp no)
 		(uuid "97f9a017-e47c-4b66-b9f1-351869928a49")
 		(property "Reference" "C34"
-			(at 101.6 80.772 0)
+			(at 55.88 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8616,7 +8438,7 @@
 			)
 		)
 		(property "Value" "100uF 100V"
-			(at 101.6 83.312 0)
+			(at 55.88 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8627,7 +8449,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 97.79 102.87 0)
+			(at 52.07 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8638,7 +8460,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 99.06 97.79 0)
+			(at 53.34 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8649,7 +8471,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, US symbol"
-			(at 97.79 100.33 0)
+			(at 52.07 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8660,7 +8482,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-00000"
-			(at 97.79 95.25 0)
+			(at 52.07 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8671,7 +8493,7 @@
 			)
 		)
 		(property "Voltage" "1kV"
-			(at 101.6 83.1849 0)
+			(at 55.88 62.8649 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8683,7 +8505,7 @@
 			)
 		)
 		(property "Tolerance" "100%"
-			(at 101.6 85.7249 0)
+			(at 55.88 65.4049 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8694,7 +8516,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 97.79 82.55 0)
+			(at 52.07 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8705,7 +8527,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 97.79 82.55 0)
+			(at 52.07 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8716,7 +8538,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 97.79 82.55 0)
+			(at 52.07 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8727,7 +8549,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 97.79 82.55 0)
+			(at 52.07 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9384,7 +9206,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 231.14 82.55 0)
+		(at 160.02 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9394,7 +9216,7 @@
 		(dnp no)
 		(uuid "abc4f55c-fc45-4050-a64e-7adcb927d993")
 		(property "Reference" "C48"
-			(at 231.648 80.01 0)
+			(at 160.528 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9405,7 +9227,7 @@
 			)
 		)
 		(property "Value" "4u7 X7R 100V"
-			(at 231.648 85.09 0)
+			(at 160.528 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9416,7 +9238,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 232.1052 86.36 0)
+			(at 160.9852 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9427,7 +9249,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 82.55 0)
+			(at 160.02 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9438,7 +9260,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 234.95 86.106 0)
+			(at 163.83 65.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9450,7 +9272,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 231.14 82.55 0)
+			(at 160.02 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9461,7 +9283,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 231.14 82.55 0)
+			(at 160.02 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9472,7 +9294,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 231.14 82.55 0)
+			(at 160.02 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9483,7 +9305,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 231.14 82.55 0)
+			(at 160.02 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10393,7 +10215,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:C_Polarized")
-		(at 116.84 82.55 0)
+		(at 71.12 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10403,7 +10225,7 @@
 		(dnp no)
 		(uuid "d770c049-f800-4ce1-8a2d-e093bfa098eb")
 		(property "Reference" "C37"
-			(at 120.65 80.772 0)
+			(at 74.93 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10414,7 +10236,7 @@
 			)
 		)
 		(property "Value" "100uF 100V"
-			(at 120.65 83.312 0)
+			(at 74.93 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10425,7 +10247,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 116.84 102.87 0)
+			(at 71.12 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10436,7 +10258,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 118.11 97.79 0)
+			(at 72.39 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10447,7 +10269,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, US symbol"
-			(at 116.84 100.33 0)
+			(at 71.12 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10458,7 +10280,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-00000"
-			(at 116.84 95.25 0)
+			(at 71.12 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10469,7 +10291,7 @@
 			)
 		)
 		(property "Voltage" "1kV"
-			(at 120.65 83.1849 0)
+			(at 74.93 62.8649 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10481,7 +10303,7 @@
 			)
 		)
 		(property "Tolerance" "100%"
-			(at 120.65 85.7249 0)
+			(at 74.93 65.4049 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10492,7 +10314,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 116.84 82.55 0)
+			(at 71.12 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10503,7 +10325,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 116.84 82.55 0)
+			(at 71.12 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10514,7 +10336,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 116.84 82.55 0)
+			(at 71.12 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10525,7 +10347,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 116.84 82.55 0)
+			(at 71.12 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10804,7 +10626,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 88.9 0)
+		(at 44.45 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10815,7 +10637,7 @@
 		(fields_autoplaced yes)
 		(uuid "e504c14a-e1ae-4f81-87c9-39ab03d06c33")
 		(property "Reference" "#PWR051"
-			(at 90.17 95.25 0)
+			(at 44.45 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10826,7 +10648,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 93.98 0)
+			(at 44.45 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10836,7 +10658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 88.9 0)
+			(at 44.45 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10847,7 +10669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 88.9 0)
+			(at 44.45 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10858,7 +10680,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 88.9 0)
+			(at 44.45 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11134,7 +10956,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:C_Polarized")
-		(at 135.89 82.55 0)
+		(at 90.17 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11144,7 +10966,7 @@
 		(dnp no)
 		(uuid "ec991045-63dd-4375-ab04-5363460f767e")
 		(property "Reference" "C39"
-			(at 139.7 80.772 0)
+			(at 93.98 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11155,7 +10977,7 @@
 			)
 		)
 		(property "Value" "100uF 100V"
-			(at 139.7 83.312 0)
+			(at 93.98 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11166,7 +10988,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 135.89 102.87 0)
+			(at 90.17 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11177,7 +10999,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 137.16 97.79 0)
+			(at 91.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11188,7 +11010,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, US symbol"
-			(at 135.89 100.33 0)
+			(at 90.17 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11199,7 +11021,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-00000"
-			(at 135.89 95.25 0)
+			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11210,7 +11032,7 @@
 			)
 		)
 		(property "Voltage" "1kV"
-			(at 139.7 83.1849 0)
+			(at 93.98 62.8649 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11222,7 +11044,7 @@
 			)
 		)
 		(property "Tolerance" "100%"
-			(at 139.7 85.7249 0)
+			(at 93.98 65.4049 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11233,7 +11055,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" ""
-			(at 135.89 82.55 0)
+			(at 90.17 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11244,7 +11066,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 135.89 82.55 0)
+			(at 90.17 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11255,7 +11077,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 135.89 82.55 0)
+			(at 90.17 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11266,7 +11088,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 135.89 82.55 0)
+			(at 90.17 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11417,7 +11239,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 90.17 76.2 0)
+		(at 44.45 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11428,7 +11250,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5d23bac-73ca-477a-8180-b7c81550615a")
 		(property "Reference" "#PWR050"
-			(at 90.17 80.01 0)
+			(at 44.45 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11439,7 +11261,7 @@
 			)
 		)
 		(property "Value" "+VPROT"
-			(at 90.17 71.12 0)
+			(at 44.45 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11449,7 +11271,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 76.2 0)
+			(at 44.45 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11460,7 +11282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 76.2 0)
+			(at 44.45 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11471,7 +11293,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 90.17 76.2 0)
+			(at 44.45 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11571,4 +11393,147 @@
 			)
 		)
 	)
-)
+
+	(rectangle
+		(start 35.56 43.18)
+		(end 205.74 80.01)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e68f2de9-18e2-4ea5-a87a-78cdef2b3443")
+	)
+	(text_box "DC Link Capacitors"
+		(exclude_from_sim no)
+		(at 35.56 70.9797 0)
+		(size 170.18 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "7e2de740-2367-4088-b295-ce7230ebbb99")
+	)
+	(rectangle
+		(start 35.56 87.63)
+		(end 392.43 232.41)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "06033a9c-d740-413e-b0f5-f1af1e62dddf")
+	)
+	(text_box "Three-Phase Inverter Bridge"
+		(exclude_from_sim no)
+		(at 35.56 223.3797 0)
+		(size 356.87 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "4915f373-5a8f-4405-996f-0ff829885da8")
+	)
+	(text_box "SPEC:\nQ3-Q8  ISC030N10NM6  Infineon  OptiMOS 6\nPG-TDSON-8 (5 x 6 mm)\n100 V, 3.0 mR max @ VGS 10 V\nQg 55 nC, Qgd 14 nC, tr/tf 4.5/5.3 ns\nR22/R27/R32  3 mR 3 W 1% low-side shunt\nC34/C37/C39  100 uF 100 V polymer"
+		(exclude_from_sim no)
+		(at 208.28 43.18 0)
+		(size 48.26 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 194 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "b3252d4b-6127-43c6-b55b-dbdf1651ab97")
+	)
+	(text_box "DESIGN NOTE:\nCALC - DC LINK\nBulk    3 x 100 uF polymer = 300 uF\nMLCC    9 x 4u7 X7R 100 V (6 bank + C40/C51/C59)\n        ~40% left at 50 V bias -> ~17 uF effective;\n        sets commutation-loop ESL, not ripple capacity.\nRipple  ~7.8 A RMS needed @ 10 A/phase\n        vs 3 x 2.5 A = 7.5 A rated (~96%).\n        Sizing called for 5 pcs; 3 fitted on Rev 1.\n        Measure per-cap ripple before production."
+		(exclude_from_sim no)
+		(at 260.35 43.18 0)
+		(size 60.96 22.86)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e7797cd5-a7e6-408c-816e-8c50bfbd43d3")
+	)
+	(text_box "DESIGN NOTE:\nGATE, SNUBBER AND SHUNT\nGate R = 0R: slew set by DRV8323 IDRIVE.\nR23/C35 etc. (3R9 + 2n2) D-S RC snubbers, DNP:\n  fit only if ringing is observed.\nShunts Kelvin-sensed via NT1/2, NT4/5, NT7/8.\n  NT3/6/9 = SHx high-side source sense.\nCSA range = 1.65 V / (G x 3 mR)\n          = +/-27.5 A at G = 20 V/V"
+		(exclude_from_sim no)
+		(at 325.12 43.18 0)
+		(size 55.88 21.59)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "1741a4ae-73b6-4fe3-9f31-17d81f0c08f7")
+	))

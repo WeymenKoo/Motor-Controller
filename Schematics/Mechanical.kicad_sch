@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "6a71c173-251b-45fa-93eb-6e6970d43dc5")
 	(paper "A4")
+	(title_block
+		(title "Mechanical - Mounting")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -841,16 +847,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ""
-		(exclude_from_sim no)
-		(at 174.498 113.0301 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "60cfc0ce-fe3e-47ed-b127-459f8ec193a9")
-	)
 	(text_box "[${#}] Mechanical - Mounting Holes"
 		(exclude_from_sim no)
 		(at 12.7 11.43 0)
@@ -873,52 +869,6 @@
 			)
 		)
 		(uuid "07f4537d-2436-4b47-a202-a229197492b2")
-	)
-	(text_box "DESIGN NOTE: \n0-Ohmresistor provides low-impedance\nbond between chassis and signal GND. Be aware of ground loops through cable\nshield."
-		(exclude_from_sim no)
-		(at 177.8 109.5139 0)
-		(size 34.29 16.2161)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "de5280cd-8c74-4c3a-a673-d5816a59ab5f")
-	)
-	(text_box "DESIGN NOTE: \nOptional RC filter for chassis grounding. Capacitors offer multi-point\nlow-impedance connections at high-frequencies."
-		(exclude_from_sim no)
-		(at 134.62 109.514 0)
-		(size 34.29 16.216)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "e2ac2a40-6008-4e1d-b77e-789c5fa3caf2")
 	)
 	(junction
 		(at 97.79 68.58)
@@ -3976,4 +3926,64 @@
 			)
 		)
 	)
-)
+
+	(rectangle
+		(start 73.66 54.61)
+		(end 231.14 139.7)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e76d41a4-b060-4599-97b0-c5601f7c332c")
+	)
+	(text_box "Mounting Holes and Chassis Bonding"
+		(exclude_from_sim no)
+		(at 73.66 130.6697 0)
+		(size 157.48 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "4306408e-1fa0-4d03-8fc2-24c18e8133d1")
+	)
+	(text_box "DESIGN NOTE:\nCHASSIS BONDING\nEach hole bonds to GND through 1n 1 kV (HF,\nmulti-point) and an optional 0R (DC).\nFitted: R58 (H6) only = single DC bond point.\nR56/R57/R59 DNP to avoid ground loops through\ncable shields and the robot frame."
+		(exclude_from_sim no)
+		(at 134.62 99.06 0)
+		(size 54.61 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "05befca1-8f50-47bc-a418-617510cdc618")
+	))

@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "0669fee0-4bc8-4d6c-af51-624e8fef4e3b")
 	(paper "A4")
+	(title_block
+		(title "Sensing - Position")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "AS5047P:AS5047P-ATSM"
 			(pin_names
@@ -877,98 +883,6 @@
 		)
 		(uuid "5db263b4-1ff2-4ebd-8cba-3a66ce9eb26f")
 	)
-	(text_box "SPEC:  \nU1  AS5047P-ATSM  ams  TSSOP-14\n14-bit (16384 counts/rev) | up to 28 krpm | DAEC\nSPI slave, mode 1 (CPOL=0, CPHA=1), up to 10 MHz, MSB first\n"
-		(exclude_from_sim no)
-		(at 83.82 52.0701 0)
-		(size 63.5 12.6999)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 194 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c7f7cfac-a904-461f-9f36-a6da3ac902d5")
-	)
-	(text_box "ASSEMBLY:\n  Package centre must be concentric with the rotor axis within\n  [FILL] mm. Diametric magnet, air gap per datasheet magnetic\n  characteristics.\n  No ferrous hardware or switching copper within [FILL] mm."
-		(exclude_from_sim no)
-		(at 153.67 67.3101 0)
-		(size 68.58 16.5099)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 153 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "d39e9f1c-559e-4e7f-8d05-5f1b94c9062a")
-	)
-	(text_box "DESIGN NOTE:\nVDD and VDD3V tied for 3.3 V operation\nTEST (pin 5) tied to GND - required\nA/B/I/U/V/W left open - permitted (datasheet pin note 5)"
-		(exclude_from_sim no)
-		(at 83.82 71.1201 0)
-		(size 63.5 12.6999)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "db4f5075-31c3-47d7-a4c6-9ac8ca4fff21")
-	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 179.07 82.55 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "e7d8bc8d-598e-45a8-bb78-92bb176e215f")
-	)
 	(junction
 		(at 189.23 127)
 		(diameter 0)
@@ -1810,4 +1724,73 @@
 			)
 		)
 	)
-)
+
+	(text_box "ASSEMBLY:\nMAGNET PLACEMENT (datasheet reference values)\nDiametric magnet, ref. N35H 8 mm dia x 3 mm.\nAir gap ~2.0 mm, Bz 35-70 mT.\nCentre on U1 package within 0.5 mm\n(INL +/-1.2 deg at 500 um offset).\nKeep ferrous hardware and phase/bus copper away."
+		(exclude_from_sim no)
+		(at 158.75 52.07 0)
+		(size 54.61 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 153 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "18d4bbd9-be4b-4846-a5a6-a2c825dfc885")
+	)
+	(text_box "SPEC:\nU1  AS5047P-ATSM  ams  TSSOP-14\n14-bit (16384 counts/rev) | up to 28 krpm | DAEC\nSPI slave, mode 1 (CPOL=0, CPHA=1), up to 10 MHz, MSB first"
+		(exclude_from_sim no)
+		(at 83.82 52.0701 0)
+		(size 69.85 11.43)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 194 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "9d7c6a36-86fd-49f8-8757-4d773914c07c")
+	)
+	(text_box "DESIGN NOTE:\nVDD and VDD3V tied for 3.3 V operation\nTEST (pin 5) tied to GND - required\nA/B/I/U/V/W left open - permitted (datasheet pin note 5)"
+		(exclude_from_sim no)
+		(at 83.82 71.1201 0)
+		(size 66.04 11.43)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c4bbc316-d157-4732-ab67-34c8401fd592")
+	))

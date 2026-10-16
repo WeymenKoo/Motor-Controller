@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "d36eb63e-99c9-4f25-acf6-974744887cdb")
 	(paper "A4")
+	(title_block
+		(title "Interface - CAN FD")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1009,57 +1015,10 @@
 		)
 		(uuid "1f66cc52-3a45-4715-b92b-50d037b6e74f")
 	)
-	(text_box "FDCAN to TTL"
-		(exclude_from_sim no)
-		(at 115.57 124.46 0)
-		(size 58.42 7.7603)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "20dc0763-8cc4-418a-8590-00b04bb4e737")
-	)
-	(text_box "DESIGN NOTE:\nCALC - SPLIT TERMINATION \nDifferential: R45 + R46 = 120.8 R (spec 120 R +/-10%) \nCommon-mode:  fc = 1/(2*pi*(R45||R46)*C68)\n                 = 1/(2*pi*30.2*47n) = 112 kHz\nCommon-mode choke deliberately omitted - no certification\nrequirement, sub-metre harness. Footprints not retained.\n\nCircuit is shown on the Interface - Interconnects sheet"
-		(exclude_from_sim no)
-		(at 185.42 107.9501 0)
-		(size 60.96 24.1299)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "59e8a365-9a34-454a-9f9e-456bb729999e")
-	)
-	(text_box "SPEC:\nU8  TCAN1044AVDRQ1  TI  SOIC-8\nVCC 4.5-5.5 V (from +5V) \nVIO 1.8-5.5 V (from +3V3)\nData rate up to 5 Mbit"
+	(text_box "SPEC:\nU8  TCAN1044AVDRQ1  TI  SOIC-8\nVCC 4.5-5.5 V (from +5V)\nVIO 1.8-5.5 V (from +3V3)\nData rate up to 5 Mbps"
 		(exclude_from_sim no)
 		(at 129.54 55.88 0)
-		(size 36.83 13.97)
+		(size 36.83 12.70)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.508)
@@ -2472,4 +2431,64 @@
 			)
 		)
 	)
-)
+
+	(text_box "DESIGN NOTE:\nBUS-SIDE CIRCUITRY\nConnectors (J4/J5), ESD (D4/D7) and switchable\nsplit termination (SW1, R45/R46/C68): see\nInterface - Interconnects sheet.\nSTB (pin 8) pulled low by R40 10k: normal mode."
+		(exclude_from_sim no)
+		(at 185.42 100.33 0)
+		(size 59.69 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "0b3e3d7c-a2d2-4200-8961-660ff199990e")
+	)
+	(rectangle
+		(start 63.5 48.26)
+		(end 256.54 137.16)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9f89344d-1684-4050-a460-e22447d88819")
+	)
+	(text_box "CAN FD Transceiver"
+		(exclude_from_sim no)
+		(at 63.5 128.1297 0)
+		(size 193.04 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "f1ad780c-f517-42c5-9a07-bb47bbd11811")
+	))

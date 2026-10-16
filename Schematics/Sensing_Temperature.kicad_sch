@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "c7de5228-aa2e-49f3-90dd-7e4811532fa9")
 	(paper "A4")
+	(title_block
+		(title "Sensing - Temperature")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1150,100 +1156,6 @@
 			)
 		)
 		(uuid "016679e3-b6bc-4896-90ba-3637150b46ee")
-	)
-	(text_box "On-Board 10k NTC"
-		(exclude_from_sim no)
-		(at 68.58 126.8597 0)
-		(size 58.42 7.7603)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "62bb96e8-a0fa-4756-9fdf-a0a70dfbf715")
-	)
-	(text_box "DESIGN NOTE:\nCALC - 10K NTC ON-BOARD NCP18XH103J03RB\n  V = 3.3 x R38/(NTC + R38)\n    -10 C (~42k)  -> 0.63 V\n     25 C (10k)   -> 1.65 V\n    100 C (~680R) -> 3.09 V\n  Self-heat: I = 165 uA, P = 0.27 mW, <0.1 C rise. Negligible."
-		(exclude_from_sim no)
-		(at 30.48 92.71 0)
-		(size 43.18 21.59)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "99a821e3-a46c-4885-8400-f9bfd44691bb")
-	)
-	(text_box "Motor NTC\n"
-		(exclude_from_sim no)
-		(at 140.97 126.8597 0)
-		(size 58.42 7.7603)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "e19d4f33-9b91-4183-a708-22320839bd81")
-	)
-	(text_box "DESIGN NOTE:\nCALC - MOTOR (external NTC on top, R39 2k to GND)\n  V = 3.3 x 2k/(NTC + 2k)\n     25 C (10k)   -> 0.55 V\n    100 C (~680R) -> 2.46 V"
-		(exclude_from_sim no)
-		(at 200.66 87.63 0)
-		(size 43.18 16.51)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "fbd5a6fd-eda3-4f0b-bc39-102b3453f7ce")
 	)
 	(junction
 		(at 85.09 82.55)
@@ -3297,4 +3209,124 @@
 			)
 		)
 	)
-)
+
+	(rectangle
+		(start 25.4 54.61)
+		(end 132.08 139.7)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d9c8776a-eae7-4b51-92ef-9bc012db5ab2")
+	)
+	(text_box "On-Board 10k NTC"
+		(exclude_from_sim no)
+		(at 25.4 130.6697 0)
+		(size 106.68 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "a2a2eaf7-4767-4c44-9fdc-09207832747e")
+	)
+	(rectangle
+		(start 135.89 54.61)
+		(end 271.78 139.7)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "18e41393-dc31-4b40-8c0b-d1218f9af594")
+	)
+	(text_box "Motor NTC (via J10)"
+		(exclude_from_sim no)
+		(at 135.89 130.6697 0)
+		(size 135.89 7.7603)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "23503b5a-1f34-421c-a73d-8115d4bd3398")
+	)
+	(text_box "DESIGN NOTE:\nCALC - MOTOR NTC (external NTC on top,\nR39 2k to GND)\n  V = 3.3 x 2k/(NTC + 2k)\n     25 C (10k)   -> 0.55 V\n    100 C (~680R) -> 2.46 V\nDZ3 clamps the off-board line to 3.3 V."
+		(exclude_from_sim no)
+		(at 200.66 87.63 0)
+		(size 46.99 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "2dda46a0-33a4-4646-a44c-e911ba99c6d0")
+	)
+	(text_box "DESIGN NOTE:\nCALC - 10K NTC ON-BOARD (R37)\nNCP18XH103J03RB, R38 10k to GND\n  V = 3.3 x R38/(NTC + R38)\n    -10 C (~42k)  -> 0.63 V\n     25 C (10k)   -> 1.65 V\n    100 C (~680R) -> 3.09 V\nSelf-heat: I = 165 uA, P = 0.27 mW,\n  <0.1 C rise. Negligible."
+		(exclude_from_sim no)
+		(at 27.94 88.9 0)
+		(size 43.18 21.59)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "134b619f-d455-4bfc-929a-1f700d20514a")
+	))

@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "6626cf3d-63ac-47a4-b42c-7121f542ee0e")
 	(paper "A3")
+	(title_block
+		(title "MCU - IOs")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -2667,19 +2673,6 @@
 		(uuid "78d6adb5-0bf8-4c7c-813b-78eeaaedff0d")
 	)
 	(rectangle
-		(start 120.65 170.18)
-		(end 156.21 172.72)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "8d5dcbde-ff69-42da-9748-f584a9e2c6e3")
-	)
-	(rectangle
 		(start 24.13 36.83)
 		(end 201.93 223.52)
 		(stroke
@@ -2716,29 +2709,6 @@
 		)
 		(uuid "04b7662e-4f47-4f3a-8b4f-164d334ab003")
 	)
-	(text_box "DESIGN NOTE:\nCALC - CRYSTAL LOAD\nCL = (C28 x C29)/(C28 + C29) + Cstray\n   = (12 x 12)/24 + ~5 = 11 pF\nSelected a crystal specified for CL = 11-12 pF."
-		(exclude_from_sim no)
-		(at 27.94 141.7593 0)
-		(size 38.1 16.2161)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "19ae25f7-cbb4-4844-8acd-1742a3495b09")
-	)
 	(text_box "Analog IO"
 		(exclude_from_sim no)
 		(at 313.69 167.64 0)
@@ -2763,29 +2733,6 @@
 		)
 		(uuid "1b94a827-f6c4-4858-8173-94b13cbe69b6")
 	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 387.35 73.66 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "2620c874-4f3f-4dd6-a143-1fa89beae3cb")
-	)
 	(text_box "[${#}] MCU - IOs"
 		(exclude_from_sim no)
 		(at 12.7 12.7 0)
@@ -2808,52 +2755,6 @@
 			)
 		)
 		(uuid "44ca8296-98ed-4bee-88a0-f5bdf9bf07ba")
-	)
-	(text_box "SPEC:\nADC CHANNEL MAP\n  FILTER_SOA  PB11  ADC1_IN14 / ADC2_IN14   (both)\n  FILTER_SOB  PB12  ADC1_IN11               (ADC1 only)\n  FILTER_SOC  PB14  ADC1_IN5                (ADC1 only)\n  VBAT_SENSE  PB0   ADC1_IN15\n  TEMP_SENSE  PB1   ADC1_IN12\n  MOT_TEMP    PB2   ADC2_IN12\n\n  Simultaneous dual-ADC sampling MUST pair SOA (on ADC2) with SOB or\n  SOC (on ADC1). Phases B and C can NEVER be sampled simultaneously.\n  Derive the third phase from Ia + Ib + Ic = 0."
-		(exclude_from_sim no)
-		(at 309.88 45.72 0)
-		(size 83.82 38.1)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 194 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "45af1ac6-01e2-45ed-a6a5-17ba063f5e80")
-	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 167.64 170.18 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "51cfd825-7c9b-4e62-9726-7a41a598fbd6")
 	)
 	(text_box "MCU - STM32G431RBT6"
 		(exclude_from_sim no)
@@ -2878,29 +2779,6 @@
 			(justify bottom)
 		)
 		(uuid "97051f1c-b54b-4d94-9f7e-71f81ae6a0d2")
-	)
-	(text_box "FIRMWARE - MANDATORY AT BOOT\n  1. Program nSWBOOT0 = 0 so BOOT0 comes from the option bit,\n     not PB8 (PB8 = FDCAN1_RX).\n  2. Set PWR_CR3.UCPD1_DBDIS = 1 BEFORE enabling TIM1.\n     PA9/PA10 (PWM_PHASEB_H / PWM_PHASEC_H) are UCPD1_DBCC1/2.\n     A high level enables internal 5.1k pull-downs on PB6 (UART TX)\n     and PB4 (PWR_LED).\n  3. DRV_nFAULT -> PA15 = TIM1_BKIN (AF9). Configure as a hardware\n     break input, not EXTI.\n  4. ESTOP -> PC3 = TIM1_BKIN2 (AF6), active HIGH (loop open)."
-		(exclude_from_sim no)
-		(at 160.02 130.356 0)
-		(size 36.83 42.364)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "9d26f31d-0571-490d-9511-0c298ec5a2a2")
 	)
 	(text_box "Testpoints\n"
 		(exclude_from_sim no)
@@ -3946,17 +3824,6 @@
 			(type default)
 		)
 		(uuid "4cba7248-6595-4537-b8dc-7c6c922ff8ba")
-	)
-	(polyline
-		(pts
-			(xy 160.02 165.1) (xy 156.21 170.18)
-		)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(uuid "4cd4ad4a-a92a-40bd-8e64-07a4b313de79")
 	)
 	(wire
 		(pts
@@ -13723,4 +13590,73 @@
 			)
 		)
 	)
-)
+
+	(text_box "DESIGN NOTE:\nSHARED-FUNCTION PINS\nPB8 = BOOT0 and FDCAN1_RX.\nPA9/PA10 (PWM_PHASEB_H / PWM_PHASEC_H) are\n  UCPD1 dead-battery pins: a high level enables\n  5.1k pull-downs on PB6 (UART TX) and PB4 (PWR_LED).\nDRV_nFAULT -> PA15 (TIM1_BKIN).\nESTOP -> PC3 (TIM1_BKIN2)."
+		(exclude_from_sim no)
+		(at 27.94 171.45 0)
+		(size 63.5 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "afe7fbd7-cf86-4a1c-9bc7-eeee1fd1982c")
+	)
+	(text_box "DESIGN NOTE:\nCALC - CRYSTAL LOAD\nX1 25 MHz HSE\nCL = C28*C29/(C28+C29)\n     + Cstray\n   = 12x12/24 + ~5 = 11 pF\nCrystal spec CL = 11-12 pF."
+		(exclude_from_sim no)
+		(at 27.94 139.7 0)
+		(size 35.56 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e9229a61-c8c0-4fd5-a793-ffe98957d878")
+	)
+	(text_box "SPEC:\nADC CHANNEL MAP\n  FILTER_SOA  PB11  ADC1_IN14 / ADC2_IN14   (both)\n  FILTER_SOB  PB12  ADC1_IN11               (ADC1 only)\n  FILTER_SOC  PB14  ADC1_IN5                (ADC1 only)\n  VBAT_SENSE  PB0   ADC1_IN15\n  TEMP_SENSE  PB1   ADC1_IN12\n  MOT_TEMP    PB2   ADC2_IN12\nSOB and SOC are both ADC1-only: phases B and C\ncannot be sampled simultaneously."
+		(exclude_from_sim no)
+		(at 309.88 45.72 0)
+		(size 80.01 22.86)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 194 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "3d2ac45b-1c2f-423e-9d6b-44c280271558")
+	))

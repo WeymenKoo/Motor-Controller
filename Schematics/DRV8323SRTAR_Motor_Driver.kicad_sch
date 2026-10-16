@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "8fc5c56b-bf55-4e01-b446-0632cd9f81fd")
 	(paper "A3")
+	(title_block
+		(title "Motor Control - Driver")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -1822,32 +1828,9 @@
 		)
 		(uuid "d423aee2-baa7-4302-b0c0-1a48ae3e234a")
 	)
-	(text_box "REVIEW"
-		(exclude_from_sim no)
-		(at 350.52 115.57 0)
-		(size 29.21 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 0 1)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "0b718da4-9eea-4b12-91c0-5d769f43179c")
-	)
 	(text_box "SPEC:\nDRV8323SRTAR  TI  WQFN-40 6x6 (RTA)\nVM 6-60 V rec, 65 V abs max \n3x CSA \nSPI\n1 A/2 A gate drive\nDigital pin abs max 5.75 V (independent of VM)\nSPx/SNx: +/-1 V continuous, +/-3 V transient 200 ns"
 		(exclude_from_sim no)
-		(at 311.15 77.4701 0)
+		(at 306.07 45.72 0)
 		(size 59.69 20.3199)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1867,29 +1850,6 @@
 			(justify left top)
 		)
 		(uuid "11cbbff1-c1dc-4187-9e81-dc8f616df73d")
-	)
-	(text_box "DESIGN NOTE:\nCALC - CHARGE PUMP\nI_VCP = 3 x Qg(HS) x f_sw = 3 x [FILL] nC x [FILL] kHz = [FILL] mA\nDRV8323 supplies 25 mA. Margin = [FILL] x."
-		(exclude_from_sim no)
-		(at 311.15 105.4101 0)
-		(size 72.39 11.43)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "2ac14e90-01a5-421a-ae25-8ded8287d0c5")
 	)
 	(text_box "Motor Driver\n"
 		(exclude_from_sim no)
@@ -7436,4 +7396,50 @@
 			)
 		)
 	)
-)
+
+	(text_box "DESIGN NOTE:\nCALC - CHARGE PUMP (high-side gates)\nI_VCP = 3 x Qg x f_sw = 3 x 55 nC x 40 kHz = 6.6 mA\nDRV8323 VCP capacity 25 mA -> 3.8x margin\nMax FET Qg at 2x margin ~= 104 nC"
+		(exclude_from_sim no)
+		(at 306.07 69.85 0)
+		(size 60.96 12.70)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "cb92e2c3-0487-4552-8ade-a67ad4602065")
+	)
+	(text_box "REV 1 NOTE:\nKNOWN ISSUES (no Rev 1 change)\nSPC/SNC swapped vs phases A/B (SPC -> RSHUNT_N_C):\n  phase C CSA output is sign-inverted.\nSDO is open-drain, R17 10k pull-up limits SPI clock.\nDRV_CS has no pull-up."
+		(exclude_from_sim no)
+		(at 306.07 87.63 0)
+		(size 63.5 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "1d1dee6b-065e-4895-81e3-7c5d6ce44815")
+	))
