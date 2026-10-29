@@ -2,7 +2,7 @@
 
 Technical notes from a full design cycle: idea → theory → schematic → simulation → layout → fab → bring-up plan. Written as a knowledge refresher as much as a build log, so each section starts with the background needed to follow the decision.
 
-**Status:** Rev 1 design-frozen and fabricated. Not yet bench-validated. Everything below is analytical or derived from the fabrication files.
+**Status:** Rev 1 design-frozen, fabricated and partly bench-validated on a 12 V supply: MCU, gate driver (SPI), current sensing and PWM verified; a T-Motor MN601-S identified (R, L, back-EMF) and spun open-loop up to 1000 rpm. Not yet tested on the 12S bus, under load, or in closed-loop FOC. The design notes below are analytical or derived from the fabrication files.
 
 
 ## Repository layout
