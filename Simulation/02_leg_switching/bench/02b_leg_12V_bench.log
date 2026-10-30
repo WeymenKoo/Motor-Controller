@@ -1,0 +1,144 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/02_leg_switching/bench/02b_leg_12V_bench.net
+Start Time: Fri Oct 30 01:58:45 2026
+Options:plotwinsize=0
+
+.step iph=-0.4
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Ccer: Increased Cpar to 9.6e-12
+C38: Increased Cpar to 1e-13
+Direct Newton iteration succeeded in finding operating point.
+
+.step iph=0.8
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.769 seconds.
+
+Files loaded:
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/02_leg_switching/bench/02b_leg_12V_bench.net
+/Users/kooweymen/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.mos
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/lib/ISC030N10NM6_fit.lib
+
+
+Measurement: t_r10
+  step	V(SW)={0.1*Vbus} 
+     1	9.97835289483e-06
+     2	1.01199814066e-05
+
+Measurement: t_r90
+  step	V(SW)={0.9*Vbus} 
+     1	1.01238799187e-05
+     2	1.01252952005e-05
+
+Measurement: t_rise
+  step	t_r90-t_r10
+     1	1.45527023854e-07
+     2	5.31379390869e-09
+
+Measurement: dvdt_rise_vns
+  step	0.8*Vbus/t_rise/1e9
+     1	0.0659671293055
+     2	1.80661880475
+
+Measurement: t_f90
+  step	V(SW)={0.9*Vbus} 
+     1	3.01221601972e-05
+     2	2.99486830469e-05
+
+Measurement: t_f10
+  step	V(SW)={0.1*Vbus} 
+     1	3.01273562634e-05
+     2	3.0086803448e-05
+
+Measurement: t_fall
+  step	t_f10-t_f90
+     1	5.19606617633e-09
+     2	1.3812040112e-07
+
+Measurement: dvdt_fall_vns
+  step	0.8*Vbus/t_fall/1e9
+     1	1.84755152729
+     2	0.0695045766026
+
+Measurement: vsw_pk
+  step	MAX(V(SW) )	FROM	TO
+     1	13.4152669907	2e-06	3.6e-05
+     2	14.5350294113	2e-06	3.6e-05
+
+Measurement: vsw_min
+  step	MIN(V(SW) )	FROM	TO
+     1	-3.03402876854	2e-06	3.6e-05
+     2	-0.81759750843	2e-06	3.6e-05
+
+Measurement: vsw_pk_scope
+  step	MAX(V(SW_SCOPE) )	FROM	TO
+     1	12.9133405685	2e-06	3.6e-05
+     2	15.2529478073	2e-06	3.6e-05
+
+Measurement: vsw_min_scope
+  step	MIN(V(SW_SCOPE) )	FROM	TO
+     1	-4.96545696259	2e-06	3.6e-05
+     2	-0.739738881588	2e-06	3.6e-05
+
+Measurement: vds_hs_pk
+  step	MAX(V(DH,SW) )	FROM	TO
+     1	18.4228465557	2e-06	3.6e-05
+     2	12.7733949423	2e-06	3.6e-05
+
+Measurement: vds_ls_pk
+  step	MAX(V(SW,SL) )	FROM	TO
+     1	13.2525307536	2e-06	3.6e-05
+     2	18.0193738937	2e-06	3.6e-05
+
+Measurement: vsw_dead1
+  step	V(SW) 	at
+     1	1.90251851229	1e-05
+     2	-0.680307017582	1e-05
+
+Measurement: vsw_dead2
+  step	V(SW) 	at
+     1	12.6747125101	3e-05
+     2	7.26889501103	3e-05
+
+Measurement: vgsl_miller
+  step	MAX(V(GL,SL) )	FROM	TO
+     1	0.593882746994	1.01e-05	1.11e-05
+     2	2.88255405426	1.01e-05	1.11e-05
+
+Measurement: vgsh_miller
+  step	MAX(V(GH,SW) )	FROM	TO
+     1	0.0535836219788	3.01e-05	3.11e-05
+     2	0.00112606980838	3.01e-05	3.11e-05
+
+Measurement: vgsl_pk_scope
+  step	MAX(V(GL_SCOPE) )	FROM	TO
+     1	0.0610899589956	1.01e-05	1.11e-05
+     2	0.822019815445	1.01e-05	1.11e-05
+
+Measurement: vshunt_max
+  step	MAX(V(SOURCE_A) )	FROM	TO
+     1	0.774183213711	2e-06	3.6e-05
+     2	0.674604892731	2e-06	3.6e-05
+
+Measurement: vshunt_min
+  step	MIN(V(SOURCE_A) )	FROM	TO
+     1	-0.705262899399	2e-06	3.6e-05
+     2	-0.745432257652	2e-06	3.6e-05
+
+Measurement: vshunt_on
+  step	V(SOURCE_A) 	at
+     1	0.0015999993775	5e-06
+     2	-0.00319999875501	5e-06
+
+Measurement: vgh_on
+  step	V(GH,SW) 	at
+     1	10.9999856949	2e-05
+     2	10.9999856949	2e-05
+
+Measurement: vgl_on
+  step	V(GL) 	at
+     1	10.9999856949	5e-06
+     2	10.9999856949	5e-06

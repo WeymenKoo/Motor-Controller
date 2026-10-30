@@ -1,0 +1,109 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/01_hot_plug/01_hot_plug.net
+Start Time: Fri Oct 30 00:02:39 2026
+
+.step esrbulk=0.03 llead=5e-07
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Cbulk: Increased Cpar to 3e-10
+Ccer: Increased Cpar to 2.88e-11
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step esrbulk=0.3 llead=5e-07
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step esrbulk=0.03 llead=2e-06
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step esrbulk=0.3 llead=2e-06
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 2.283 seconds.
+
+Files loaded:
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/01_hot_plug/01_hot_plug.net
+/Users/kooweymen/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.dio
+
+
+Measurement: vbus_pk
+  step	MAX(V(VBUS))	FROM	TO
+     1	30.0693130493	0	0.0012
+     2	29.996213913	0	0.0012
+     3	36.3410453796	0	0.0012
+     4	30.1308269501	0	0.0012
+
+Measurement: overshoot_pct
+  step	(Vbus_pk-Vbus)/Vbus*100
+     1	0.231043497721
+     2	-0.0126202901204
+     3	21.1368179321
+     4	0.436089833577
+
+Measurement: ilead_pk
+  step	MAX(-I(Llead))	FROM	TO
+     1	305.248657227	0	0.0012
+     2	201.599853516	0	0.0012
+     3	221.659713745	0	0.0012
+     4	153.200744629	0	0.0012
+
+Measurement: itvs_pk
+  step	MAX(-I(D1))	FROM	TO
+     1	0.00139122328255	0	0.0012
+     2	0.00255461456254	0	0.0012
+     3	0.000452498206869	0	0.0012
+     4	0.00112232880201	0	0.0012
+
+Measurement: t_1st
+  step	V(VBUS)=Vbus 
+     1	8.118705011e-05
+     2	failed
+     3	6.53591536394e-05
+     4	9.2668952236e-05
+
+Measurement: t_2nd
+  step	V(VBUS)=Vbus 
+     1	failed
+     2	failed
+     3	0.000245493304029
+     4	failed
+
+Measurement: f_ring
+  step	1/(t_2nd-t_1st)
+     1	failed
+     2	failed
+     3	5551.41819491
+     4	failed
+
+Measurement: f_lc
+  step	1/(2*pi*sqrt(Llead*(3*Cbulk+Ncer*Ccer)))
+     1	12412.7847695
+     2	12412.7847695
+     3	6206.39238474
+     4	6206.39238474
+
+Measurement: vsense_pk
+  step	MAX(V(VBAT_SENSE))	FROM	TO
+     1	4.16145372391	0	0.0012
+     2	4.1613483429	0	0.0012
+     3	4.16154146194	0	0.0012
+     4	4.16145515442	0	0.0012
+
+Measurement: vbus_fw_pk
+  step	Vsense_pk*(12.4k+2k)/2k
+     1	29.9624668121
+     2	29.9617080688
+     3	29.963098526
+     4	29.9624771118
+
+Measurement: vbus_end
+  step	V(VBUS) 	at
+     1	29.996213913	0.00119
+     2	29.996213913	0.00119
+     3	29.996213913	0.00119
+     4	29.996213913	0.00119

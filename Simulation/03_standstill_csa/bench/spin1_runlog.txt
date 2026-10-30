@@ -1,0 +1,13 @@
+  0.7 s  state 1.0 faults 0.0 vbus 11.9521
+  0.7 s  ARM {'seq': '5', 'status': 'OK'}
+  0.8 s  RUN CSA_CAL {'seq': '6', 'status': 'OK'}
+  1.1 s  CSA calibrated; state 2.0
+ 10.1 s  RUN IF_SPIN {'seq': '11', 'status': 'OK'}
+ 10.1 s  REF IF 2 300 {'seq': '12', 'status': 'OK'}
+ 15.3 s  at speed: state 3.0 vbus 11.9688
+ 15.5 s  scope frame captured, status STOP
+ 15.5 s  STOP {'seq': '34', 'status': 'OK'}
+ 15.5 s  DISARM {'seq': '35', 'status': 'OK'}
+ 15.9 s  final state 1.0 faults 0.0
+ 15.9 s  events: [{'t_ms': '2287132', 'type': 'STATE', 'from': 'DISARMED', 'to': 'ARMED', 'mode': 'IDLE'}, {'t_ms': '2287154', 'type': 'STATE', 'from': 'ARMED', 'to': 'RUNNING', 'mode': 'CSA_CAL'}, {'t_ms': '2287154', 'type': 'MODE', 'mode': 'CSA_CAL', 'dryrun': '1', 'sim': '0'}, {'t_ms': '2287236', 'type': 'CSA_CAL', 'ok': '1', 'offA': '1646', 'offB': '1629', 'offC': '1618', 'noise_ma': '11.4588/12.2259/13.6004'}, {'t_ms': '2287236', 'type': 'STATE', 'from': 'RUNNING', 'to': 'ARMED', 'mode': 'IDLE'}, {'t_ms': '2296432', 'type': 'PWM', 'freq': '25000', 'limit_ms': '12000', 'duty': '50/50/50', 'mode': 'IF_SPIN'}, {'t_ms': '2296432', 'type': 'STATE', 'from': 'ARMED', 'to': 'RUNNING', 'mode': 'IF_SPIN'}, {'t_ms': '2296433', 'type': 'MODE', 'mode': 'IF_SPIN', 'dryrun': '0', 'sim': '0'}, {'t_ms': '2301880', 'type': 'STATE', 'from': 'RUNNING', 'to': 'ARMED', 'mode': 'IDLE'}, {'t_ms': '2301911', 'type': 'STATE', 'from': 'ARMED', 'to': 'DISARMED', 'mode': 'IDLE'}]
+ 20.0 s  saved 10000000 points, dt 3.2 ns, min 1.432 max 1.868

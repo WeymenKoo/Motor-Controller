@@ -1,0 +1,45 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/03_standstill_csa/bench/03b_standstill_12V_bench.net
+Start Time: Fri Oct 30 02:04:16 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Starting Gmin stepping level 2
+Gmin stepping level 2 failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 203.263 ms
+Total elapsed time: 17.376 seconds.
+
+Files loaded:
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/03_standstill_csa/bench/03b_standstill_12V_bench.net
+/Users/kooweymen/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.mos
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/lib/ISC030N10NM6_fit.lib
+
+ia_avg: AVG(I(LA) )=0.808897799349 FROM 0.00084 TO 0.001
+ia_pp: PP(I(LA) )=0.210603952408 FROM 0.00092 TO 0.001
+ib_avg: AVG(I(LB) )=-0.404448899675 FROM 0.00084 TO 0.001
+ia_true: I(LA) =0.791351616383 at 0.00098
+soa_s: V(FILTER_SOA) =1.69761347771 at 0.00098
+ia_csa: (SOA_s-VREF/2)/(G*Rsh)=0.793557961782
+ia_err_pct: (IA_csa-IA_true)/IA_true*100=0.278807214589
+ib_true: I(LB) =-0.395675808191 at 0.00098
+sob_s: V(FILTER_SOB) =1.62619328499 at 0.00098
+ib_csa: (SOB_s-VREF/2)/(G*Rsh)=-0.396778583527
+ib_err_pct: (IB_csa-IB_true)/IB_true*100=0.278706787857
+soa_hs: V(SOA) =1.64999997616 at 0.00096
+soa_pp: PP(V(SOA) )=0.0651098489761 FROM 0.00096 TO 0.001
+duty_a: V(DA) =0.510961472988 at 0.00098
+isup_avg: AVG(-I(Vsup) )=0.0139816138267 FROM 0.0006 TO 0.001
+psup: Isup_avg*Vbus=0.16777936592
+pcopper: 1.5*Rph*Iset**2=0.09408

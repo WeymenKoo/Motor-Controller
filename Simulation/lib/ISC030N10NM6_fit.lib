@@ -1,0 +1,4 @@
+* ISC030N10NM6 behavioural VDMOS fit (datasheet Rev 2.2). Not the vendor model.
+.model ISC030 VDMOS(Vto=3.0 Kp=19.5 mtriode=4.8 Rd=0.7m Rs=0.3m Rg=1.05
++ Cgdmax=1.3n Cgdmin=15p a=0.4 Cgs=4.3n Cjo=11.5n m=0.6 Vj=0.7
++ Is=5e-10 N=1.2 Rb=1m tt=8n Ksubthres=0.1 lambda=0.001)

@@ -13,7 +13,7 @@ Technical notes from a full design cycle: idea → theory → schematic → simu
 | `Schematics/` | Hierarchical sheets (power, MCU, gate driver, MOSFETs, sensing, CAN-FD, interconnects, ...) |
 | `Libraries/` | Project-local symbols, footprints and 3D models (referenced via `${KIPRJMOD}/Libraries/`) |
 | `Documentation/` | Design rationale, layout/manufacturing review, board renders, RevC action summary |
-| `Simulation/` | LTspice inrush and inverter/gate-drive benches |
+| `Simulation/` | LTspice bench-correlation suite (hot-plug, half-bridge switching, current sense) with DHO804 bench captures and comparisons; see `Simulation/README.md` |
 | `Project Outputs/` | BOM, pick-and-place, netlist, fabrication package (Rev 1), schematic PDF |
 
 Open `FoC Motor Controller.kicad_pro` in KiCad 10. Vendor datasheets and the KiCad worksheet templates are not included in this repo; without the templates KiCad falls back to its default title block.

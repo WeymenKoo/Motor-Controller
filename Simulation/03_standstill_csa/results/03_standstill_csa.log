@@ -1,0 +1,37 @@
+LTspice 26.0.2 for MacOS
+Circuit: /Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/03_standstill_csa/03_standstill_csa.net
+Start Time: Thu Oct 29 23:57:45 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 13.326 seconds.
+
+Files loaded:
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/03_standstill_csa/03_standstill_csa.net
+/Users/kooweymen/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.mos
+/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/Project/01 Hardware/FoC Motor Controller/Simulation/lib/ISC030N10NM6_fit.lib
+
+ia_avg: AVG(I(LA) )=5.00116586311 FROM 0.00084 TO 0.001
+ia_pp: PP(I(LA) )=1.10442304611 FROM 0.00092 TO 0.001
+ib_avg: AVG(I(LB) )=-2.50058293155 FROM 0.00084 TO 0.001
+ia_true: I(LA) =4.97365474701 at 0.00098
+soa_s: V(FILTER_SOA) =1.94925141335 at 0.00098
+ia_csa: (SOA_s-VREF/2)/(G*Rsh)=4.98752355576
+ia_err_pct: (IA_csa-IA_true)/IA_true*100=0.278845425581
+ib_true: I(LB) =-2.4868273735 at 0.00098
+sob_s: V(FILTER_SOB) =1.50037419796 at 0.00098
+ib_csa: (SOB_s-VREF/2)/(G*Rsh)=-2.49376336734
+ib_err_pct: (IB_csa-IB_true)/IB_true*100=0.27890934064
+soa_hs: V(SOA) =1.64999997616 at 0.00096
+soa_pp: PP(V(SOA) )=0.328346610069 FROM 0.00096 TO 0.001
+duty_a: V(DA) =0.52342993021 at 0.00098
+isup_avg: AVG(-I(Vsup) )=0.140369505571 FROM 0.0006 TO 0.001
+psup: Isup_avg*Vbus=4.21108516714
+pcopper: 1.5*Rph*Iset**2=3.675

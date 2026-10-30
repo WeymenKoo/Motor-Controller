@@ -1,0 +1,61 @@
+===== 01_hot_plug/results/01_hot_plug.log
+  !!      2	failed
+  !!      1	failed
+  !!      2	failed
+  !!      4	failed
+  !!      1	failed
+  vbus_pk                30.07 | 30 | 36.34 | 30.13
+  overshoot_pct          0.231 | -0.01262 | 21.14 | 0.4361
+  ilead_pk               305.2 | 201.6 | 221.7 | 153.2
+  itvs_pk                0.001391 | 0.002555 | 0.0004525 | 0.001122
+  t_1st                  8.119e-05 | failed | 6.536e-05 | 9.267e-05
+  t_2nd                  failed | failed | 0.0002455 | failed
+  f_ring                 failed | failed | 5551 | failed
+  f_lc                   1.241e+04 | 1.241e+04 | 6206 | 6206
+  vsense_pk              4.161 | 4.161 | 4.162 | 4.161
+  vbus_fw_pk             29.96 | 29.96 | 29.96 | 29.96
+  vbus_end               30 | 30 | 30 | 30
+===== 02_leg_switching/results/02_leg_switching.log
+  t_r10                  9.936e-06 | 1.012e-05
+  t_r90                  1.002e-05 | 1.013e-05
+  t_rise                 8.265e-08 | 5.456e-09
+  dvdt_rise_vns          0.2904 | 4.399
+  t_f90                  3.012e-05 | 2.993e-05
+  t_f10                  3.013e-05 | 2.997e-05
+  t_fall                 4.265e-09 | 3.993e-08
+  dvdt_fall_vns          5.627 | 0.601
+  vsw_pk                 31.66 | 32.79
+  vsw_min                -2.542 | -1.004
+  vsw_pk_scope           31.12 | 35.88
+  vsw_min_scope          -6.209 | -1.087
+  vds_hs_pk              35.66 | 31.04
+  vds_ls_pk              31.29 | 38.56
+  vsw_dead1              22.09 | -0.7615
+  vsw_dead2              30.95 | -0.7966
+  vgsl_miller            0.1796 | 2.355
+  vgsh_miller            0.07252 | 0.0004373
+  vgsl_pk_scope          0.01371 | 3.607
+  vshunt_max             1.208 | 1.422
+  vshunt_min             -0.9738 | -1.365
+  vshunt_on              0.01 | -0.02
+  vgh_on                 11 | 11
+  vgl_on                 11 | 11
+===== 03_standstill_csa/results/03_standstill_csa.log
+  !! Direct Newton iteration failed to find operating point.
+  ia_avg                 AVG(I(LA) )=5.00116586311 FROM 0.00084 TO 0.001
+  ia_pp                  PP(I(LA) )=1.10442304611 FROM 0.00092 TO 0.001
+  ib_avg                 AVG(I(LB) )=-2.50058293155 FROM 0.00084 TO 0.001
+  ia_true                I(LA) =4.97365474701 at 0.00098
+  soa_s                  V(FILTER_SOA) =1.94925141335 at 0.00098
+  ia_csa                 (SOA_s-VREF/2)/(G*Rsh)=4.98752355576
+  ia_err_pct             (IA_csa-IA_true)/IA_true*100=0.278845425581
+  ib_true                I(LB) =-2.4868273735 at 0.00098
+  sob_s                  V(FILTER_SOB) =1.50037419796 at 0.00098
+  ib_csa                 (SOB_s-VREF/2)/(G*Rsh)=-2.49376336734
+  ib_err_pct             (IB_csa-IB_true)/IB_true*100=0.27890934064
+  soa_hs                 V(SOA) =1.64999997616 at 0.00096
+  soa_pp                 PP(V(SOA) )=0.328346610069 FROM 0.00096 TO 0.001
+  duty_a                 V(DA) =0.52342993021 at 0.00098
+  isup_avg               AVG(-I(Vsup) )=0.140369505571 FROM 0.0006 TO 0.001
+  psup                   Isup_avg*Vbus=4.21108516714
+  pcopper                1.5*Rph*Iset**2=3.675
